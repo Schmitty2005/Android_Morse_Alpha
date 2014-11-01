@@ -1,9 +1,16 @@
 package com.example.brian_000.morsetraining;
+/*
+This will contain all of the programming for the sound, dictionary for encoding alpha-numeric into
+morse code, wave creation, playback, and popular word list.
+*/
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
 
 
 public class morse_learn extends Activity {
@@ -32,5 +39,10 @@ public class morse_learn extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void sendMessage(View )
+    {
+        Intent intent = new Intent(morse_learn.this, watch_learn.class);
+        startActivity(intent);
     }
 }
