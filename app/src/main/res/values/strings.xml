@@ -4,5 +4,9 @@
     <string name="app_name">MorseTraining</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="welcome_note">Welcome to Morse Learn!  You will learn the listen to morse code instead of memorizing all of the dits and dahs, you will know each character by its sound!</string>
+    <string name="title_activity_watch_learn">Watch and Learn!</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>
