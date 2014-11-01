@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MorseTraining.iml" filepath="$PROJECT_DIR$/MorseTraining.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/morse_sound/morse_sound.iml" filepath="$PROJECT_DIR$/morse_sound/morse_sound.iml" />
+    </modules>
+  </component>
+</project>
+
