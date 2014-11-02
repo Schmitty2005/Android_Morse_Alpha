@@ -1,7 +1,7 @@
 package com.schmitty.MorseLearn.sound;
 import java.util.*;
 
-
+//Add dictionary for character levels
 public class morse_player {
 //create map for character to morse code conversion
 //Also create map class for different levels of character learning.  level 1 5etar level 2 sln04 etc..
