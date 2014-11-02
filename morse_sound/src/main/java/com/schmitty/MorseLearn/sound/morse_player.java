@@ -4,6 +4,8 @@ import java.util.*;
 
 public class morse_player {
 //create map for character to morse code conversion
+//Also create map class for different levels of character learning.  level 1 5etar level 2 sln04 etc..
+    //whatever combos are according to TSART book.
     Map <String, String > decode_key = new HashMap<String, String>();
     //copy dictionary from c++ project!
     public java.util.HashMap<Character, String> morsedict = new java.util.HashMap<Character, String>()
