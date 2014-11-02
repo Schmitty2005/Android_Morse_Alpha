@@ -12,7 +12,11 @@
         android:text="@string/welcome_note"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/watchWindow" />
+        android:id="@+id/watchWindow"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:textColor="#ff0800ff" />
 
     <Button
         android:layout_width="wrap_content"
@@ -22,13 +26,5 @@
         android:onClick="sendMessage"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="activity" />
 
 </RelativeLayout>
