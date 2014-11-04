@@ -1,7 +1,13 @@
 package com.schmitty.MorseLearn.sound;
 import java.util.*;
-
-//Add dictionary for character levels
+//TODO find vb.net memory stream equivalent for java programs.
+//todo Add dictionary for character levels
+//TODO Create global variables for class
+/** morse_player creates dit and dah waves and allows single character and word playback in morse code.
+ *
+ * @author Brian S.
+ * @version Alpha
+ */
 public class morse_player {
 //create map for character to morse code conversion
 //Also create map class for different levels of character learning.  level 1 5etar level 2 sln04 etc..
@@ -10,8 +16,6 @@ public class morse_player {
     //copy dictionary from c++ project!
     public java.util.HashMap<Character, String> morsedict = new java.util.HashMap<Character, String>();
     {
-       // convert {} to () and , to ; later
-
         morsedict.put ('a', ".-");
         morsedict.put ('b', "-...");
         morsedict.put ('c', "-.-.");
@@ -58,6 +62,6 @@ public class morse_player {
 
         //finish fixing dictionary
         //add that one command to convert it to unchangeable.....whatever it was called...
-    };
+    }
 
 }
