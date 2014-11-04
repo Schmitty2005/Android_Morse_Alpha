@@ -1,11 +1,14 @@
 package com.schmitty.MorseLearn.sound;
 import java.util.*;
 import java.io.ByteArrayOutputStream; // equivalent to memory stream in vb.net ????
-
+//TODO IMPORTANT!!! ...FIND OUT IF ByteArrayOutputStream will work with wave playback! IMPORTANT!!!!
+//TODO get formulas for dit dah spacing.
 //TODO find vb.net memory stream equivalent for java programs.
 //todo Add dictionary for character levels
 //TODO Create global variables for class
 //TODO copy C++ code into java for wave file creation.
+//TODO find out how to playback ByteStreamOutput with wave data!
+
 /** morse_player creates dit and dah waves and allows single character and word playback in morse code.
  *
  * @author Brian S.
@@ -13,6 +16,7 @@ import java.io.ByteArrayOutputStream; // equivalent to memory stream in vb.net ?
  */
 public class morse_player { //( double frequency, int WPM, boolean farnsworth){
 //TODO create WPM variables and wave file variables
+
     //variables for dit dah lengths.
     double dit_duration_ms = 100;
     double dah_duration_ms = 300;
@@ -37,6 +41,7 @@ public class morse_player { //( double frequency, int WPM, boolean farnsworth){
      */
    private ByteArrayOutputStream PCM_to_Wave (ByteArrayOutputStream PCM_sample, ByteArrayOutputStream WAVE_sample)
    {
+    //TODO code to add wave header to PCM stream
        return WAVE_sample;
 
    }
@@ -105,4 +110,27 @@ public class morse_player { //( double frequency, int WPM, boolean farnsworth){
     }
 public ByteArrayOutputStream dit_stream = new ByteArrayOutputStream();
 public ByteArrayOutputStream dah_stream = new ByteArrayOutputStream();
+
+public void initialise_sounds (double freq_hz, int WPM, boolean farnsworth_space_bool ) {
+    //TODO create subroutine to initialise wave files for playback.
+    if (farnsworth_space_bool) {
+        word_spacing = word_spacing * 3;
+    }
+}
+    private static void play_dit(){}
+    //TODO code to play_dit
+    private static void play_dah(){}
+    //TODO code to play dah
+    public void play_character (char play_this){}
+    //TODO code to play single morse character
+   //This is how a dictionary is referenced in JAVA!
+    String test = morsedict.get('s');
+
+    public void play_words (String play_this){}
+    //TODO code to play words using morse
+
+
+
+}
+
 }
