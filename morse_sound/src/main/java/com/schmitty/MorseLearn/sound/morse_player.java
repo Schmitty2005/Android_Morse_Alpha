@@ -37,7 +37,7 @@ public class morse_player { //( double frequency, int WPM, boolean farnsworth){
      * Convert PCM wave stream to WAVE file format returned as WAVE_sample
      * @param PCM_sample PCM based ByteArrayOutputStream (input data)
      * @param WAVE_sample WAVE file created from PCM_sample (output data)
-     * @return
+     * @return Returns wave sample
      */
    private ByteArrayOutputStream PCM_to_Wave (ByteArrayOutputStream PCM_sample, ByteArrayOutputStream WAVE_sample)
    {
