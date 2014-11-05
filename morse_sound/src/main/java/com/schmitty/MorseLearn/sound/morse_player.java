@@ -1,5 +1,25 @@
 package com.schmitty.MorseLearn.sound;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.SourceDataLine;
+import javax.sound.sampled.UnsupportedAudioFileException;
+import javax.sound.sampled.DataLine.Info;
+import java.io.FileNotFoundException;
+import java.io.OutputStream;
+import java.io.InputStream;
 import java.util.*;
+import java.io.InputStream;
+import javax.sound.*;
+import javax.sound.sampled.AudioInputStream;
+o
+import javax.sound.sampled.AudioSystem;
+
 import java.io.ByteArrayOutputStream; // equivalent to memory stream in vb.net ????
 //TODO IMPORTANT!!! ...FIND OUT IF ByteArrayOutputStream will work with wave playback! IMPORTANT!!!!
 //TODO get formulas for dit dah spacing.
@@ -17,6 +37,8 @@ import java.io.ByteArrayOutputStream; // equivalent to memory stream in vb.net ?
 public class morse_player { //( double frequency, int WPM, boolean farnsworth){
 //TODO create WPM variables and wave file variables
 
+private InputStream  dit_stream;
+    AudioInputStream audio_stream =  AudioSystem.getAudioInputStream(this.dit_stream);
     //variables for dit dah lengths.
     double dit_duration_ms = 100;
     double dah_duration_ms = 300;
@@ -51,7 +73,8 @@ public class morse_player { //( double frequency, int WPM, boolean farnsworth){
         //TODO function to create a hahn window for the wave file
         //read full wave and create a hahn window for wave file.
         //possibly not use this function but will build it into the wave creation routine.
-    return PCM_sample;
+
+        return PCM_sample;
     }
 
 //create map for character to morse code conversion
@@ -108,8 +131,8 @@ public class morse_player { //( double frequency, int WPM, boolean farnsworth){
         //finish fixing dictionary
         //add that one command to convert it to unchangeable.....whatever it was called...
     }
-public ByteArrayOutputStream dit_stream = new ByteArrayOutputStream();
-public ByteArrayOutputStream dah_stream = new ByteArrayOutputStream();
+//public ByteArrayOutputStream dit_stream = new ByteArrayOutputStream();
+//public ByteArrayOutputStream dah_stream = new ByteArrayOutputStream();
 
 public void initialise_sounds (double freq_hz, int WPM, boolean farnsworth_space_bool ) {
     //TODO create subroutine to initialise wave files for playback.

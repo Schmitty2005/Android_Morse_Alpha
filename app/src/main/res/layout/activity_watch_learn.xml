@@ -34,12 +34,13 @@
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
-            <Button android:id="@+id/dummy_button"
+            <Button android:id="@+id/watch_exit_btn"
                 style="?metaButtonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:onClick="startScreen"
                 android:layout_weight="1"
-                android:text="@string/dummy_button" />
+                android:text="Exit" />
 
         </LinearLayout>
 
@@ -66,6 +67,13 @@
             android:text="Large Text"
             android:id="@+id/textView2"
             android:layout_gravity="center" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Switch"
+            android:id="@+id/switch1"
+            android:layout_gravity="left|top" />
 
     </FrameLayout>
 

@@ -16,7 +16,10 @@
         android:textAlignment="center"
         android:textStyle="bold"
         android:textSize="32dp"
-        android:textColor="#ff0800ff" />
+        android:textColor="#ff0800ff"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -26,5 +29,18 @@
         android:onClick="sendMessage"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Morse Watch And Learn"
+        android:id="@+id/textViewTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:shadowColor="#ff53deff" />
 
 </RelativeLayout>

@@ -1,1 +1,1 @@
-include ':app', ':morse_sound'
+include ':app', ':morse_sound', ':WaveLibrary'

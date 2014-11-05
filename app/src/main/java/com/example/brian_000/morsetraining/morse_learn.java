@@ -46,4 +46,10 @@ public class morse_learn extends Activity {
         Intent intent = new Intent(morse_learn.this, watch_learn.class);
         startActivity(intent);
     }
+    public void startScreen(View v)
+
+    {
+        Intent intent = new Intent(morse_learn.this, morse_learn.class);
+        startActivity(intent);
+    }
 }
