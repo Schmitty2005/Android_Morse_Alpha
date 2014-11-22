@@ -34,6 +34,7 @@ import java.io.ByteArrayOutputStream; // equivalent to memory stream in vb.net ?
  * @author Brian S.
  * @version Alpha
  */
+
 public class morse_player { //( double frequency, int WPM, boolean farnsworth){
 //TODO create WPM variables and wave file variables
 
@@ -156,4 +157,4 @@ public void initialise_sounds (double freq_hz, int WPM, boolean farnsworth_space
 
 }
 
-}
+
